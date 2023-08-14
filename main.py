@@ -3,6 +3,7 @@ import os
 import discord
 
 from llm import getResponse
+from keep_alive import keep_alive
 
 DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
 
@@ -28,4 +29,5 @@ async def on_message(message):
     await message.channel.send(response.content)
 
 
+keep_alive()
 client.run(DISCORD_TOKEN)
