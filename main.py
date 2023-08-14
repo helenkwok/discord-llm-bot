@@ -4,7 +4,7 @@ import discord
 
 from llm import getResponse
 
-DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+DISCORD_TOKEN = os.environ['DISCORD_TOKEN']
 
 intents = discord.Intents.default()
 intents.message_content = True
