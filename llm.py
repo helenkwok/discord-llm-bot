@@ -6,7 +6,7 @@ from langchain.prompts.chat import (
 )
 
 # setup an instance of the OpenAI language model
-chat = ChatOpenAI(model_name="gpt-4", temperature=0.5)
+chat = ChatOpenAI(model_name="gpt-4-vision-preview", temperature=0.5)
 
 template = "You are an assistant that helps users find information."
 system_message_prompt = SystemMessagePromptTemplate.from_template(template)
